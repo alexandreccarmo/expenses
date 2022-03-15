@@ -68,6 +68,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/alexandrecdocarmo/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/alexandrecdocarmo/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1",
       "packageUri": "lib/",
@@ -158,7 +164,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-03-13T19:18:58.306319Z",
+  "generated": "2022-03-15T00:05:16.969943Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }
