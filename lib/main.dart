@@ -25,6 +25,10 @@ class ExpensesApp extends StatelessWidget {
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
+              button: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             appBarTheme: AppBarTheme(
               textTheme: ThemeData.light().textTheme.copyWith(
@@ -50,7 +54,9 @@ class _MyHomePageState extends State<MyHomePage>{
   final List<Transaction> _transactions = [
     Transaction(id: 't0', title: 'Conta antiga', value: 400.76, date: DateTime.now().subtract(Duration(days: 33))),
     Transaction(id: 't1', title: 'Novo Tênis de corrida', value: 310.76, date: DateTime.now().subtract(Duration(days: 3))),
-    Transaction(id: 't2', title: 'Conta de luz', value: 211.30, date: DateTime.now().subtract(Duration(days: 34)))
+    Transaction(id: 't2', title: 'Conta de luz', value: 211.30, date: DateTime.now().subtract(Duration(days: 34))),
+    Transaction(id: 't3', title: 'Conta de agua', value: 250.30, date: DateTime.now().subtract(Duration(days: 34))),
+    Transaction(id: 't4', title: 'Conta de internet', value: 390.80, date: DateTime.now().subtract(Duration(days: 34))),
   ];
 
   List<Transaction> get _recentTransactions {

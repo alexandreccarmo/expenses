@@ -22,7 +22,6 @@ class Chart extends StatelessWidget{
         bool sameMonth = recentTransaction[i].date.month == weekDay.month;
         bool sameYear = recentTransaction[i].date.year == weekDay.year;
 
-
         if(sameDay && sameMonth && sameYear){
           totalSum += recentTransaction[i].value;
         }
@@ -32,7 +31,7 @@ class Chart extends StatelessWidget{
         'day':DateFormat.E().format(weekDay)[0],
         'value': totalSum
       };
-    });
+    }).reversed.toList();
   }
 
   double get _weekTotalValue {
