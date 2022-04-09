@@ -1,37 +1,38 @@
-import 'package:expenses/models/transaction.dart';
 import 'package:flutter/material.dart';
+import '../models/transaction.dart';
 import 'package:intl/intl.dart';
 
 class TransactionList extends StatelessWidget {
-
-  List<Transaction> transactions;
+  final List<Transaction> transactions;
   final void Function(String) onRemove;
 
   TransactionList(this.transactions, this.onRemove);
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Container(
-        height: 300,
-        child: transactions.isEmpty ? Column(
-          children: <Widget>[
-            SizedBox(height: 20),
-            Text(
-              'Nenhuma transação cadastrada',
-              style: Theme.of(context).textTheme.titleMedium,
+      height: 430,
+      child: transactions.isEmpty
+          ? Column(
+        children: <Widget>[
+          SizedBox(height: 20),
+          Text(
+            'Nenhuma Transação Cadastrada!',
+            style: Theme.of(context).textTheme.headline6,
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 200,
+            child: Image.asset(
+              'assets/images/waiting.png',
+              fit: BoxFit.cover,
             ),
-            SizedBox(height: 20),
-            Container(
-              height: 200,
-              child: Image.asset(
-                  'assets/images/waiting.png',
-                  fit:BoxFit.cover
-              ),
-            )
-          ],
-        ) : ListView.builder(
+          ),
+        ],
+      )
+          : ListView.builder(
         itemCount: transactions.length,
-        itemBuilder: (ctx,index){
+        itemBuilder: (ctx, index) {
           final tr = transactions[index];
           return Card(
             elevation: 5,
@@ -39,7 +40,7 @@ class TransactionList extends StatelessWidget {
               vertical: 8,
               horizontal: 5,
             ),
-            child:  ListTile(
+            child: ListTile(
               leading: CircleAvatar(
                 radius: 30,
                 child: Padding(
@@ -51,7 +52,7 @@ class TransactionList extends StatelessWidget {
               ),
               title: Text(
                 tr.title,
-                style: Theme.of(context).textTheme.titleMedium,
+                style: Theme.of(context).textTheme.headline6,
               ),
               subtitle: Text(
                 DateFormat('d MMM y').format(tr.date),
@@ -64,11 +65,7 @@ class TransactionList extends StatelessWidget {
             ),
           );
         },
-      )
-
+      ),
     );
-
-
-
   }
 }
