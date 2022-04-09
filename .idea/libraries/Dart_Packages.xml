@@ -51,6 +51,13 @@
             </list>
           </value>
         </entry>
+        <entry key="expenses">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="fake_async">
           <value>
             <list>
@@ -213,6 +220,7 @@
       <root url="file://$USER_HOME$/FlutterDev/flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$USER_HOME$/FlutterDev/flutter/packages/flutter/lib" />
       <root url="file://$USER_HOME$/FlutterDev/flutter/packages/flutter_test/lib" />
+      <root url="file://$PROJECT_DIR$/../lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
