@@ -103,7 +103,8 @@ class _MyHomePageState extends State<MyHomePage>{
 
   @override
   Widget build(BuildContext context){
-    bool isLandSacape = MediaQuery.of(context).orientation == Orientation.landscape;
+    final mediaQuery = MediaQuery.of(context);
+    bool isLandSacape = mediaQuery.orientation == Orientation.landscape;
     final appBar = AppBar(
       title: Text('Despesas pessoais'),
       actions: <Widget>[
@@ -122,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage>{
         ),
       ],
     );
-    final availableHeight = MediaQuery.of(context).size.height - appBar.preferredSize.height - MediaQuery.of(context).padding.top;
+    final availableHeight = mediaQuery.size.height - appBar.preferredSize.height - mediaQuery.padding.top;
 
       return Scaffold(
         appBar: appBar,
@@ -147,12 +148,12 @@ class _MyHomePageState extends State<MyHomePage>{
               //   ),
               if (_showChart || !isLandSacape)
                 Container(
-                  height: availableHeight * (isLandSacape ? 0.7 : 0.3),
+                  height: availableHeight * (isLandSacape ? 0.8 : 0.3),
                   child: Chart(_recentTransactions),
                 ),
               if (!_showChart || !isLandSacape)
                 Container(
-                  height: availableHeight * 0.7,
+                  height: availableHeight  * (isLandSacape ? 1 : 0.7),
                   child: TransactionList(_transactions, _removeTransaction),
                 ),
             ],
