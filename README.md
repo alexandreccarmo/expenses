@@ -1,6 +1,6 @@
 # expenses
 
-Criei esse modelo para entender como o flutter funciona, como ele atua no Android e no iOS, como funciona suas árvore de Widgets, como posso usar recursos expecíficos para cada plataforma.
+Criei esse modelo para entender como o flutter funciona, como ele atua no Android e no iOS, como funciona sua árvore de Widgets, como posso usar recursos expecíficos para cada plataforma.
 
 Fiz esse modelo acompanhado o curso, escrevendo cada recurso conforme fui estudando.
 
