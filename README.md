@@ -1,16 +1,17 @@
 # expenses
 
-A new Flutter project.
+Criei esse modelo para entender como o flutter funciona, como ele atua no Android e no iOS, como funciona suas árvore de Widgets, como posso usar recursos expecíficos para cada plataforma.
 
-## Getting Started
+Fiz esse modelo acompanhado o curso, escrevendo cada recurso conforme fui estudando.
 
-This project is a starting point for a Flutter application.
+Deixei aqui no git o modelo para quem tiver interesse em olhar o código e estudar.
 
-A few resources to get you started if this is your first Flutter project:
+O modelo está feito em Fluitter 2.10.2.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Escrevi o modelo usando Android Studio no Mac OS Monterey.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Testei cada componente no iOS 12 e 13 e Android 9 e 12.
+
+Não uso o Flutter profissionalmente, desenvolvo apenas nativo, mas sou apaixanado por desenvolvimento mobile e o Flutter chamou minha atenção pela forma que trabalha.
+
+Se eu pretendo desenvolver em Flutter futuramente ? Quem sabe!
